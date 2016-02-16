@@ -7,10 +7,10 @@ To avoid the standard title behavior, it uses the attribute `data-title`.
 
 How it works
 ------------
-####HTML/CSS
+#### HTML/CSS
 Download the repository and check out the source code of the demo.
 
-####SCSS
+#### SCSS
 If you use SCSS, there's an easy way to create customized tooltips. Just change the variables in the `_variables.scss` file.
 
 ```scss
