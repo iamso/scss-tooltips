@@ -1,0 +1,26 @@
+{
+  "default": [
+    "dist",
+    "watch"
+  ],
+  "css": [
+    "sass",
+    "autoprefixer",
+    "csscomb",
+    "cssmin",
+    "bless",
+    "usebanner:css",
+    "notify:css"
+  ],
+  "dist": [
+    "clean",
+    "sass",
+    "autoprefixer",
+    "csscomb",
+    "cssmin",
+    "bless",
+    "usebanner",
+    "update_json",
+    "notify:all"
+  ]
+}
