@@ -10,7 +10,7 @@ How it works
 ####HTML/CSS
 Download the repository and check out the source code of the demo.
 
-####LESS
+####SCSS
 If you use SCSS, there's an easy way to create customized tooltips. Just change the variables in the `_variables.scss` file.
 
 ```scss
