@@ -7,8 +7,8 @@ module.exports = function(grunt) {
   require('load-grunt-config')(grunt, {
     config: {
       banner: '/*!\n' +
-              ' * <%= package.realName %> - Version <%= package.version %>\n' +
-              // ' * <%= package.description %>\n' +
+              ' * <%= package.name %> - <%= package.version %>\n' +
+              ' * <%= package.description %>\n' +
               ' * Author: <%= package.author.name %> <<%= package.author.email %>>\n' +
               ' * Build date: <%= grunt.template.today("yyyy-mm-dd") %>\n' +
               ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= package.author.name %>\n' +

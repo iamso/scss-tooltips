@@ -1,14 +1,13 @@
 {
-  "name": "scss-tooltips",
-  "realName" : "SCSS Tooltips",
-  "version": "0.1.0",
+  "name": "tooltips.scss",
+  "version": "0.1.1",
   "description": "SCSS Tooltips",
   "repository": {
     "type": "git",
-    "url": "git://github.com/iamso/scss-tooltips.git"
+    "url": "git://github.com/iamso/tooltips.scss.git"
   },
   "bugs": {
-    "url": "https://github.com/iamso/scss-tooltips/issues"
+    "url": "https://github.com/iamso/tooltips.scss/issues"
   },
   "author": {
     "name": "Steve Ottoz",
@@ -43,4 +42,3 @@
     "time-grunt": "^1.2.2"
   }
 }
-

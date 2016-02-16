@@ -1,17 +1,17 @@
 {
-  "name": "scss-tooltips",
-  "version": "0.1.0",
+  "name": "tooltips.scss",
+  "version": "0.1.1",
   "description": "SCSS Tooltips",
   "repository": {
     "type": "git",
-    "url": "git://github.com/iamso/scss-tooltips.git"
+    "url": "git://github.com/iamso/tooltips.scss.git"
   },
   "authors": [
     "Steve Ottoz <so@dev.so>"
   ],
   "main": "dist/tooltips.min.css",
   "license": "MIT",
-  "homepage": "https://github.com/iamso/scss-tooltips.git",
+  "homepage": "https://github.com/iamso/tooltips.scss.git",
   "ignore": [
     ".bower.json",
     ".editorconfig",

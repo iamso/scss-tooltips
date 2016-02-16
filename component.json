@@ -1,8 +1,8 @@
 {
-  "name": "scss-tooltips",
-  "repository": "iamso/scss-tooltips",
+  "name": "tooltips.scss",
+  "repository": "iamso/tooltips.scss",
   "description": "SCSS Tooltips",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "tooltips",
     "scss"
