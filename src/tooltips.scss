@@ -43,10 +43,10 @@
   // Top Left
   &.tl {
     &:before {
-      margin: 0 0 ($tooltip-arrow-length + $tooltip-movement) $tooltip-side-margin;
+      margin: 0 0 ($tooltip-arrow-length + $tooltip-arrow-distance + $tooltip-movement) $tooltip-side-margin;
     }
     &:after {
-      margin: 0 0 $tooltip-movement (-$tooltip-arrow-width);
+      margin: 0 0 ($tooltip-arrow-distance + $tooltip-movement) (-$tooltip-arrow-width);
     }
     &:hover,
     &.hover {
@@ -55,7 +55,7 @@
         right: auto;
         bottom: 100%;
         left: 50%;
-        margin: 0 0 $tooltip-arrow-length $tooltip-side-margin;
+        margin: 0 0 ($tooltip-arrow-length + $tooltip-arrow-distance) $tooltip-side-margin;
         transform: translate(-100%,0);
       }
       &:after {
@@ -65,7 +65,7 @@
         right: auto;
         bottom: 100%;
         left: 50%;
-        margin: 0 0 0 (-$tooltip-arrow-width);
+        margin: 0 0 $tooltip-arrow-distance (-$tooltip-arrow-width);
       }
     }
   }
@@ -74,10 +74,10 @@
   &,
   &.t {
     &:before {
-      margin: 0 0 ($tooltip-arrow-length + $tooltip-movement);
+      margin: 0 0 ($tooltip-arrow-length + $tooltip-arrow-distance + $tooltip-movement);
     }
     &:after {
-      margin: 0 0 $tooltip-movement (-$tooltip-arrow-width);
+      margin: 0 0 ($tooltip-arrow-distance + $tooltip-movement) (-$tooltip-arrow-width);
     }
     &:hover,
     &.hover {
@@ -87,7 +87,7 @@
         bottom: 100%;
         left: 50%;
         transform: translate(-50%,0);
-        margin: 0 0 $tooltip-arrow-length;
+        margin: 0 0 ($tooltip-arrow-length + $tooltip-arrow-distance);
       }
       &:after {
         border-width: $tooltip-arrow-length $tooltip-arrow-width 0 $tooltip-arrow-width;
@@ -96,7 +96,7 @@
         right: auto;
         bottom: 100%;
         left: 50%;
-        margin: 0 0 0 (-$tooltip-arrow-width);
+        margin: 0 0 $tooltip-arrow-distance (-$tooltip-arrow-width);
       }
     }
   }
@@ -104,10 +104,10 @@
   // Top Right
   &.tr {
     &:before {
-      margin: 0 $tooltip-side-margin ($tooltip-arrow-length + $tooltip-movement) 0;
+      margin: 0 $tooltip-side-margin ($tooltip-arrow-length + $tooltip-arrow-distance + $tooltip-movement) 0;
     }
     &:after {
-      margin: 0 (-$tooltip-arrow-width) $tooltip-movement 0;
+      margin: 0 (-$tooltip-arrow-width) ($tooltip-arrow-distance + $tooltip-movement) 0;
     }
     &:hover,
     &.hover {
@@ -116,7 +116,7 @@
         right: 50%;
         bottom: 100%;
         left: auto;
-        margin: 0 $tooltip-side-margin $tooltip-arrow-length 0;
+        margin: 0 $tooltip-side-margin ($tooltip-arrow-length + $tooltip-arrow-distance) 0;
         transform: translate(100%, 0);
       }
       &:after {
@@ -126,7 +126,7 @@
         right: 50%;
         bottom: 100%;
         left: auto;
-        margin: 0 (-$tooltip-arrow-width) 0 0;
+        margin: 0 (-$tooltip-arrow-width) $tooltip-arrow-distance 0;
       }
     }
   }
@@ -134,10 +134,10 @@
   // Left
   &.l {
     &:before {
-      margin: 0 ($tooltip-arrow-length + $tooltip-movement) 0 0;
+      margin: 0 ($tooltip-arrow-length + $tooltip-arrow-distance + $tooltip-movement) 0 0;
     }
     &:after {
-      margin: (-$tooltip-arrow-width) $tooltip-movement 0 0;
+      margin: (-$tooltip-arrow-width) ($tooltip-arrow-distance + $tooltip-movement) 0 0;
     }
     &:hover,
     &.hover {
@@ -147,7 +147,7 @@
         bottom: auto;
         left: auto;
         transform: translate(0,-50%);
-        margin: 0 $tooltip-arrow-length 0 0;
+        margin: 0 ($tooltip-arrow-length + $tooltip-arrow-distance) 0 0;
       }
       &:after {
         border-width: $tooltip-arrow-width 0 $tooltip-arrow-width $tooltip-arrow-length;
@@ -156,7 +156,7 @@
         right: 100%;
         bottom: auto;
         left: auto;
-        margin: (-$tooltip-arrow-width) 0 0 0;
+        margin: (-$tooltip-arrow-width) $tooltip-arrow-distance 0 0;
       }
     }
   }
@@ -164,10 +164,10 @@
   // Right
   &.r {
     &:before {
-      margin: 0 0 0 ($tooltip-arrow-length + $tooltip-movement);
+      margin: 0 0 0 ($tooltip-arrow-length + $tooltip-arrow-distance + $tooltip-movement);
     }
     &:after {
-      margin: (-$tooltip-arrow-width) 0 0 $tooltip-movement;
+      margin: (-$tooltip-arrow-width) 0 0 ($tooltip-arrow-distance + $tooltip-movement);
     }
     &:hover,
     &.hover {
@@ -177,7 +177,7 @@
         bottom: auto;
         left: 100%;
         transform: translate(0,-50%);
-        margin: 0 0 0 $tooltip-arrow-length;
+        margin: 0 0 0 ($tooltip-arrow-length + $tooltip-arrow-distance);
       }
       &:after {
         border-width: $tooltip-arrow-width $tooltip-arrow-length $tooltip-arrow-width 0;
@@ -186,7 +186,7 @@
         right: auto;
         bottom: auto;
         left: 100%;
-        margin: (-$tooltip-arrow-width) 0 0 0;
+        margin: (-$tooltip-arrow-width) 0 0 $tooltip-arrow-distance;
       }
     }
   }
@@ -195,10 +195,10 @@
   // Bottom Left
   &.bl {
     &:before {
-      margin: ($tooltip-arrow-length + $tooltip-movement) 0 0 $tooltip-side-margin;
+      margin: ($tooltip-arrow-length + $tooltip-arrow-distance + $tooltip-movement) 0 0 $tooltip-side-margin;
     }
     &:after {
-      margin: $tooltip-movement 0 0 (-$tooltip-arrow-width);
+      margin: ($tooltip-arrow-distance + $tooltip-movement) 0 0 (-$tooltip-arrow-width);
     }
     &:hover,
     &.hover {
@@ -207,7 +207,7 @@
         right: auto;
         bottom: auto;
         left: 50%;
-        margin: $tooltip-arrow-length 0 0 $tooltip-side-margin;
+        margin: ($tooltip-arrow-length + $tooltip-arrow-distance) 0 0 $tooltip-side-margin;
         transform: translate(-100%,0);
       }
       &:after {
@@ -217,7 +217,7 @@
         right: auto;
         bottom: auto;
         left: 50%;
-        margin: 0 0 0 (-$tooltip-arrow-width);
+        margin: $tooltip-arrow-distance 0 0 (-$tooltip-arrow-width);
       }
     }
   }
@@ -225,10 +225,10 @@
   // Bottom
   &.b {
     &:before {
-      margin: ($tooltip-arrow-length + $tooltip-movement) 0 0;
+      margin: ($tooltip-arrow-length + $tooltip-arrow-distance + $tooltip-movement) 0 0;
     }
     &:after {
-      margin: $tooltip-movement 0 0 (-$tooltip-arrow-width);
+      margin: ($tooltip-arrow-distance + $tooltip-movement) 0 0 (-$tooltip-arrow-width);
     }
     &:hover,
     &.hover {
@@ -238,7 +238,7 @@
         bottom: auto;
         left: 50%;
         transform: translate(-50%,0);
-        margin: $tooltip-arrow-length 0 0;
+        margin: ($tooltip-arrow-length + $tooltip-arrow-distance) 0 0;
       }
       &:after {
         border-width: 0 $tooltip-arrow-width $tooltip-arrow-length $tooltip-arrow-width;
@@ -247,7 +247,7 @@
         right: auto;
         bottom: auto;
         left: 50%;
-        margin: 0 0 0 (-$tooltip-arrow-width);
+        margin: $tooltip-arrow-distance 0 0 (-$tooltip-arrow-width);
       }
     }
   }
@@ -255,10 +255,10 @@
   // Bottom Right
   &.br {
     &:before {
-      margin: ($tooltip-arrow-length + $tooltip-movement) $tooltip-side-margin 0 0;
+      margin: ($tooltip-arrow-length + $tooltip-arrow-distance + $tooltip-movement) $tooltip-side-margin 0 0;
     }
     &:after {
-      margin: $tooltip-movement (-$tooltip-arrow-width) 0 0;
+      margin: ($tooltip-arrow-distance + $tooltip-movement) (-$tooltip-arrow-width) 0 0;
     }
     &:hover,
     &.hover {
@@ -267,7 +267,7 @@
         right: 50%;
         bottom: auto;
         left: auto;
-        margin: $tooltip-arrow-length $tooltip-side-margin 0 0;
+        margin: ($tooltip-arrow-length + $tooltip-arrow-distance) $tooltip-side-margin 0 0;
         transform: translate(100%,0);
       }
       &:after {
@@ -277,7 +277,7 @@
         right: 50%;
         bottom: auto;
         left: auto;
-        margin: 0 (-$tooltip-arrow-width) 0 0;
+        margin: $tooltip-arrow-distance (-$tooltip-arrow-width) 0 0;
       }
     }
   }
