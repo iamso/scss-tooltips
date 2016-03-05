@@ -18,10 +18,10 @@
     ".git",
     ".gitattributes",
     ".gitignore",
+    "demo",
     "grunt",
     "Gruntfile.js",
-    "node_modules",
-    "src"
+    "node_modules"
   ],
   "keywords": [
     "tooltips",
