@@ -4,7 +4,7 @@ module.exports = {
   },
 
   files: {
-    src: 'src/tooltips.scss',
+    src: 'src/combined.scss',
     dest: 'dist/tooltips.css'
   }
 
