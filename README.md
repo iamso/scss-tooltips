@@ -40,7 +40,7 @@ $tooltip-margin-easing: $easeOutExpo;
 $tooltip-opacity-easing: $easeOutExpo;
 ```
 
-Check out `tooltips.scss` for more details.
+Check out `combined.scss` for more details.
 
 License
 -------
